@@ -1,12 +1,91 @@
-header {
-    width: 90%;
+
+// header nav goes here
+
+.header-topBar {
+    background-color: $background;
+    width: 100%;
+    font-family:$basefont;
+    color:  rgba(0, 0, 0, 0.7);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-align: left;
+}
+
+.topBar-nav-active {
+    text-decoration-line: underline;  
+}
+
+// header nav info goes here
+
+.header-info h6 {
+    color:  rgba(39, 39, 39, 0.7);
+    font-size: 12px;
+    letter-spacing: 0.45px;
+    text-align: left;    
+}
+
+.header-info p {
+    color:  rgba(0, 0, 0, 0.7);
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-align: left;
+}
+
+.header-button {
+    color: $primary;
+    text-transform: uppercase;
+    border: 2px solid $primary;
+    background-color:  rgba(162, 200, 252, 0);
+    padding: 2%;
 }
 
 
-// make the partial
-// save the partial
-// delete the partial .css
-// import the partial in .scss
-// save style.scss
+// header menu goes here
+
+.header-nav,
+.header-nav-menu, 
+.header-nav-controls, 
+.header-nav-socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
 
 
+.header-nav {
+    background-color: $primary;
+    a {
+        font-size: 12px;
+        color: $secondary;
+        text-transform: uppercase;
+    }
+}
+
+.header-nav-menu {
+    width: 70%;    
+}
+
+.header-nav-controls {
+    color: $secondary;
+    justify-content: space-around;
+    width: 15%;
+    // padding: 0px 5px 0px 5px;
+}
+
+.header-nav-socialIcons {
+    width: 15%;
+    margin: 0;
+    border-left: 0.2px solid $secondary;
+}
+
+
+
+
+
+.header-banner {
+    background-image: url("./../images/banner-image.jpg");
+    background-size: cover;
+    background-position: center;
+}

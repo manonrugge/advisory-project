@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Advisory</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins|Source+Sans+Pro" rel="stylesheet">
     
 </head>
 <body>
@@ -19,36 +19,38 @@
 
         <div class="header-topBar">
 
-            <div>
-                <div class="header-topBar-phoneCall">
-                    <img src="images/phone-call-icon.png" alt="phone call icon">
-                    <p>+88 01912704287</p>
-                </div>
-                <div class="header-topBar-mail">
-                    <img src="images/mail.png" alt="email icon">
-                    <p>Perfect_help@gmail.com</p>
-                </div>
-            </div>
-
-            <div>
-                <div class="header-topBar-language">
-                    <img src="images/language-icon.png" alt="language icon">
-                    <p>English</p>
-                    <i class="fa fa-caret-down fa-fw" aria-hidden="true"></i>
+            <div class="wrapper">
+                <div>
+                    <div class="header-topBar-phoneCall">
+                        <img src="images/phone-call-icon.png" alt="phone call icon">
+                        <p>+88 01912704287</p>
+                    </div>
+                    <div class="header-topBar-mail">
+                        <img src="images/mail.png" alt="email icon">
+                        <p>Perfect_help@gmail.com</p>
+                    </div>
                 </div>
 
-                <ul class="topBar-nav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Claim & Policy</a></li>
-                    <li><a href="index.html">Register</a></li>
-                </ul>
+                <div>
+                    <div class="header-topBar-language">
+                        <img src="images/language-icon.png" alt="language icon">
+                        <p>English</p>
+                        <i class="fa fa-caret-down fa-fw" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="topBar-nav">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Claim & Policy</a></li>
+                        <li><a class="topBar-nav-active" href="index.html">Register</a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
 
         <!-- header info goes here -->
 
-        <div class="header-info">
+        <div class="header-info wrapper">
 
             <img src="images/Logo.png" alt="logo Advisory">
 
@@ -68,11 +70,14 @@
                 </div>
             </div>
 
+            <button class="header-button">Free consultation</button>
+
         </div>
+        
 
         <!-- header menu goes here -->
 
-        <div class="header-nav">
+        <div class="header-nav wrapper">
 
             <ul class="header-nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -111,13 +116,16 @@
 
         <!-- header banner goes here -->
 
-        <div class="header banner">
-            <div class="banner-title">
-                <h1>Advisory Business </br> Consulting Services</h1>
-                <p>We offer consulting expertise in the areas of turnaround management, receiverships, and loan restructuring. Our services, through corporate renewal and recovery, enable and return to profitability.</p>
-            </div>
-            <div>
-                <button><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> Meet Our Expert</button>
+        <div class="header-banner">
+
+            <div class="wrapper">
+                <div class="banner-title">
+                    <h1>Advisory Business </br> Consulting Services</h1>
+                    <p>We offer consulting expertise in the areas of turnaround management, receiverships, and loan restructuring. Our services, through corporate renewal and recovery, enable and return to profitability.</p>
+                </div>
+                <div>
+                    <button><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> Meet Our Expert</button>
+                </div>
             </div>
         </div>
 
@@ -194,6 +202,8 @@
 
         </section>
 
+        <!-- section whyAdvisory goes here -->
+
         <section class="whyAdvisory-section">
             <div>
                 <h2>Why Choosing Advisory</h2>
@@ -202,7 +212,7 @@
             </div>
             <img src="images/painting.jpg" alt="image of a painting">
 
-            <div class="whyAdvisory-textBLock">
+            <div class="whyAdvisory-textBlock">
 
                 <div class="textbox">
                     <div> 
@@ -417,7 +427,7 @@
                 </div>
 
                 <div class="footer-container-news">
-                    
+
                     <h5 class="footer-title">Latest News</h5>
                     <div class="footer-news-item">
                         <p>Business processes are fundamental to every company.</p>
