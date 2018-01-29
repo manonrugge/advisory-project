@@ -7,10 +7,6 @@
     margin: 80px auto;
 }
 
-.whyAdvisory-section-text,
-.whyAdvisory-container img {
-    width: 50%;    
-}
 
 .whyAdvisory-section-text {
     padding: 0px 20px 0px 0px; 
@@ -36,8 +32,27 @@
 }
 
 
-// whyAdvisory text gallery goes here
+@media (max-width: 768px) {
 
+	.whyAdvisory-container  {
+        width: 95%;       
+	}
+}
+
+
+@media (max-width: 480px) {
+    
+	.whyAdvisory-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+     
+	}
+
+}
+
+
+// whyAdvisory text gallery goes here
 
 
 .whyAdvisory-textBlock {
@@ -81,4 +96,25 @@
         text-align: left;
         width: 70%;
     }
+}
+
+
+
+@media (max-width: 768px) {
+
+	.wwhyAdvisory-textBlock  {
+        width: 95%;       
+	}
+}
+
+
+@media (max-width: 480px) {
+    
+	.whyAdvisory-textBlock {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+     
+	}
+
 }

@@ -1,5 +1,32 @@
 // project section goes here
 
+.services-section-container-p {
+    position: relative;
+}
+
+.services-section-container-p::before {
+    content: 'P';
+    font-family: $heading;
+    color: $background;
+    font-size: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 80px;
+    width: 30px;
+    background: $primary;
+}
+
 .section-subtext {
     display: flex;
     flex-direction: row;
