@@ -1,0 +1,88 @@
+// services section goes here
+
+.services-section-container {
+    position: relative;
+}
+
+.services-section {
+    background-color: $background;
+    padding: 60px 0px;
+}
+
+.section-title {
+    width: 25%;
+    margin: 0 auto;
+    font-family: $heading;
+    text-align: center;
+    position: relative;
+    h3 {
+        font-size: 12px;
+        color: $headingcolor;
+    }
+    h2 {
+        font-size: 20px;
+        color: $primary;
+        padding-bottom: 30px;
+    }
+}
+
+.services-section-container::before {
+    content: 'S';
+    font-family: $heading;
+    color: $secondary;
+    font-size: 100px;
+    position: absolute;
+    left: 46%;
+    // right: 20;
+    
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 80px;
+    width: 30%;
+    background: $primary;
+}
+
+.services-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   .box {
+        background-color: $secondary;
+        font-family: $basefont;
+        width: 31%;
+        padding:25px;
+		margin-top: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.services-gallery h4 {
+    color:  rgba(39, 39, 39, 0.7);
+    font-size: 12px;
+    letter-spacing: 0.55px;
+    margin-bottom: 0;
+}
+
+.services-gallery p {
+    color:  rgba(1, 0, 0, 0.7);
+    letter-spacing: 0.4px;
+    font-size: 10px;
+    line-height: 24px;
+}
+
+.box img {
+    margin: 0 auto;
+    width: 15%;
+    padding-bottom: 20px;
+}

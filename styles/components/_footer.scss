@@ -1,3 +1,163 @@
-background {
-    color: gray;
+// footer goes here
+
+.footer-content {
+    background-color:  #202020;
 }
+
+.displayBar-content {
+    position: relative;
+}
+
+.footer-displayBar {
+    width: 100%;
+    background-color:  #313030;
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px;
+    top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .displayBar-block {
+        width: 33.33%;
+        display: flex;
+        flex-direction: row;
+        p {
+            font-family: $secondaryheading;
+            font-size: 10px;
+            color: $secondary;
+            padding-left: 20px;
+        }
+    }
+}
+
+// footer items goes here
+
+.footer-container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 100px;
+    h5 {
+        font-family: $secondaryheading;
+        color: $secondary;
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+
+.footer-container-info,
+.footer-container-nav,
+.footer-container-news {
+    width: 31%;
+}
+
+.footer-container-info {
+    font-family: $basefont;
+    color:  #b1afaf;
+    font-size: 10px;
+    line-height: 16px;
+    img {
+        width: 60%;
+    }
+}
+
+.footer-input {
+    position: relative;
+    .footer-email {
+        background-color:  #313030;
+        width: 90%;
+        color:  #605d5d;
+        font-size: 8px;
+        padding: 11.5px;
+        border: none;
+    }
+    .btn {
+        position: absolute;
+        border-radius: 20px;
+        background-color: $primary;
+        border: none;
+        color: $secondary;
+        width: 65px;
+        right: 0px;
+        padding: 10px;
+    }
+}
+
+
+// footer second colum goes here
+
+.footer-container-nav {
+    font-family: $basefont;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    font-size: 10px;
+    line-height: 25px;
+}
+
+.footer-container-nav a {
+    padding-top: 20px;
+    color:  #b1afaf;  
+}
+
+.footer-container-nav a:hover {
+    color: $primary;
+}
+
+// footer third colum goes here
+
+.footer-container-news {
+    color: $secondary;
+    .footer-news-item {
+        font-size: 10px;
+        line-height: 15px;
+        padding-top: 20px;
+        p {
+            color: $primary;
+        }
+    }
+}
+
+.footer-container-news button {
+    border: none;
+    color: $primary;
+    background-color: #202020;
+    font-size: 12px;
+    padding: 0;
+    & .fa-arrow-right {
+        color: $secondary;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
+
+// footer social nav goes here
+
+.footer-nav-bar {
+    border-top: 0.5px solid #949292;
+    padding: 30px 0px;
+    color: $secondary;
+
+}
+
+.footer-copyright h6 {
+    margin: auto 0;
+    color:  #949292;
+    letter-spacing: 0.6px;
+    font-size: 8px;
+}
+
+.footer-nav-bar,
+.footer-socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    a {
+       color:  #949292;
+       padding-left: 5px;
+       font-size: 10px;
+    }
+}
+

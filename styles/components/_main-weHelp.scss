@@ -1,0 +1,76 @@
+// weHelp section goes here
+
+.weHelp-section {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0px;
+}
+
+.weHelp-section h2,
+.weHelp-section h3  {
+    font-family: $heading;
+    margin: 0;
+}
+
+.weHelp-section h2{
+    font-size: 20px;
+    color: $headingcolor;
+}
+
+.weHelp-section h3{
+    font-size: 12px;
+    color: $primary;
+}
+
+
+.weHelp-container {
+    width: 70%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+        background-color:  #2f87fd;
+        color: $secondary;
+        width: 107.5px;
+        height: 26px;   
+        padding: 10px auto;
+        border: none;
+        font-size: 10px;
+    }
+    p {
+        font-family: $basefont;
+        color: $basecolor;
+        margin: 0;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 26px;
+    }
+}
+
+.weHelp-aside {
+    background-color: $background;
+    width: 30%;
+    border-right: 1px solid $primary;
+    margin-left: 20px;
+    padding: 20px;
+    button {
+        color: $basefont;
+        background-color: $background;
+        width: 107.5px;
+        height: 26px;   
+        padding: 10px auto;
+        border: none;
+        font-size: 10px;
+        padding-left: 0;
+        align-content: flex-end;
+    }
+    p {
+        font-family: $basefont;
+        color: $basecolor;
+        margin: 0;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 26px;
+    }
+}

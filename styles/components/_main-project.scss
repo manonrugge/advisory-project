@@ -1,0 +1,36 @@
+// project section goes here
+
+.section-subtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+    p {
+        width: 80%;
+        color: $basecolor;
+        font-family: $secondaryheading;
+        font-size: 14px;
+        margin: 0;
+    }
+    button {
+        color: $primary;
+        background-color: $secondary;
+        width: 107.5px;
+        height: 26px;   
+        padding: 10px auto;
+        border: none;
+        font-size: 10px;
+        padding-left: 0;
+        align-content: flex-end;
+    }
+}
+
+
+.project-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+        width: 32%;
+    }
+}

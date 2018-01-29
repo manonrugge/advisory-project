@@ -1,0 +1,84 @@
+// whyAdvisory section goes here
+
+.whyAdvisory-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+
+.whyAdvisory-section-text,
+.whyAdvisory-container img {
+    width: 50%;    
+}
+
+.whyAdvisory-section-text {
+    padding: 0px 20px 0px 0px; 
+    .whyAdvisory-subtext {
+        font-family: $secondaryheading;
+        color: $primary;
+        font-size: 12px;
+    }
+}
+
+.whyAdvisory-section-text h2 {
+    font-size: 25px;
+    font-family: $heading;
+    color: $headingcolor;
+    padding-bottom: 30px;
+}
+
+.whyAdvisory-section-text p {
+    font-size: 12px;
+    font-family: $basefont;
+    color: $headingcolor;
+    padding-bottom: 30px;
+}
+
+
+// whyAdvisory text gallery goes here
+
+
+
+.whyAdvisory-textBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textbox {
+    border: 1px solid $background;
+    background-color:  rgba(228, 228, 228, 0);
+    padding: 10px;
+    margin: 10px;
+
+    &:hover {
+            border-left: 1px solid $primary;
+        }
+    p {
+        color:  rgba(39, 39, 39, 0.7);
+        font-size: 10px;
+        letter-spacing: 0.4px;
+        margin: 20px 0px;
+        line-height: 15px;
+        text-align: left;
+        // width: 100%;
+    }
+}
+
+
+
+.textbox-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+    h4 {
+        color:  rgba(39, 39, 39, 0.7);
+        font-size: 12px;
+        letter-spacing: 0.55px;
+        margin-bottom: 0;
+        text-align: left;
+        width: 70%;
+    }
+}

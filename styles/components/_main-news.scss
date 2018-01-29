@@ -1,0 +1,79 @@
+// news section goes here
+
+.section-subtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+    p {
+        width: 80%;
+        color: $basecolor;
+        font-family: $secondaryheading;
+        font-size: 14px;
+        margin: 0;
+    }
+    button {
+        color: $primary;
+        background-color: $secondary;
+        width: 107.5px;
+        height: 26px;   
+        padding: 10px auto;
+        border: none;
+        font-size: 10px;
+        padding-left: 0;
+        align-content: flex-end;
+    }
+}
+
+.news-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+        width: 31%;
+        img {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 162, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    /* height: 100%;
+    width: 100%; */
+}
+
+// .overlay .fa-link {
+//     text-align: center;
+//     margin-top: 50%;
+//     transform: translateY(-50%)
+// }
+
+ul img:hover .overlay {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
+
+figcaption {
+    font-family: $secondaryheading;
+    color: $primary;
+    font-size: 12px;
+    p {
+        color: $basecolor;
+        font-size: 10px
+    }
+}
