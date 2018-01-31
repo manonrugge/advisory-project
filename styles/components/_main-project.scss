@@ -2,6 +2,7 @@
 
 .services-section-container-p {
     position: relative;
+    margin: 80px;
 }
 
 .services-section-container-p::before {
@@ -52,12 +53,47 @@
     }
 }
 
-
 .project-gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
     img {
         width: 32%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .services-section-container-p {
+        margin: 40px;
+    }
+    
+	.project-gallery {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+	}
+
+	.project-gallery img {
+		flex-direction: column;
+        padding: 25px 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .section-subtext {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        button{
+            margin: 20px auto;
+        }  
+    }
+    
+    .project-section .section-subtext p {
+        width: 100%;
     }
 }

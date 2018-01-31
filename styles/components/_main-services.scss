@@ -3,7 +3,7 @@
 
 .services-section {
     background-color: $background;
-    padding: 60px 0px;
+    padding: 80px 0px;
 }
 
 .services-section-container {
@@ -12,8 +12,9 @@
 
 // this is a repeating styling
 
+// note to self, make a mixin? 
+
 .section-title {
-    // width: 25%;
     margin: 0 auto;
     font-family: $heading;
     text-align: center;
@@ -65,7 +66,7 @@
         background-color: $secondary;
         font-family: $basefont;
         width: 31%;
-        padding:25px;
+        padding: 25px;
 		margin-top: 20px;
         text-align: center;
         display: flex;
@@ -73,6 +74,7 @@
         justify-content: space-around;
     }
 }
+
 
 @media (max-width: 768px) {
 
@@ -85,14 +87,13 @@
 	}
 	.services-gallery .box {
 		flex-direction: column;
-        padding: 25px 0;
+        padding: 25px;
         width: 48%;
         display: inline-block;
         img {
             width: 10%;
         }
 	}
-
 }
 
 
@@ -100,23 +101,23 @@
     
 	.services-gallery {
         flex-direction: column;
-        justify-content: center;
-        width: 100%;
+        // justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 30px;
         
 	}
 
 	.services-gallery .box {
 		flex-direction: column;
-        padding: 25px 0;
+        padding: 25px;
         width: 100%;
         display: inline-block;
         img {
             width: 10%;
         }
-	}
-
+    }
 }
-
 
 .services-gallery h4 {
     color:  rgba(39, 39, 39, 0.7);

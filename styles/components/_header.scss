@@ -1,6 +1,7 @@
 
 // header nav goes here
 
+
 .header-topBar {
     background-color: $background;
     width: 100%;
@@ -78,7 +79,6 @@
     }
 }
 
-
 .header-info h6 {
     color:  rgba(39, 39, 39, 0.7);
     font-size: 12px;
@@ -100,6 +100,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 20%;
+    padding-top: 10px;
     .image-icon {
         width: 10%;
     }
@@ -119,6 +120,7 @@
 
 // header menu goes here
 
+
 .header-nav,
 .header-nav-menu, 
 .header-nav-controls, 
@@ -127,8 +129,13 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
+    align-items: center;
 }
 
+.fa-bars, 
+label  {
+    display: none;
+}
 
 .header-nav {
     background-color: $primary;
@@ -143,7 +150,11 @@
 
 .header-nav-menu {
     width: 70%; 
-    padding: 15px 20px 15px 0px;   
+    padding: 15px 20px 15px 0px;
+}
+
+.collapsible-menu {
+    display: none;
 }
 
 .header-nav-controls {
@@ -151,6 +162,21 @@
     justify-content: space-around;
     width: 15%;
     padding: 15px 20px;
+    .fa-shopping-bag {
+        position: relative;
+    }
+    & p {
+        border-radius: 50%;
+        background-color:  #2d71cd;
+        text-align: center;
+        padding: 2.5px 0px;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        position: relative;
+        left: -15px;
+        top: 10px;
+    }
 }
 
 .header-nav-socialIcons {
@@ -161,16 +187,14 @@
 }
 
 
-// header menu goes here
+// header banner goes here
 
 .header-banner-container {
     padding: 80px 0px;
     button {
         background-color:  #2f87fd;
-        color: $secondary;
-        width: 107.5px;
-        height: 26px;   
-        padding: 10px auto;
+        color: $secondary;  
+        padding: 15px;
         border: none;
         font-size: 10px;
     }
@@ -205,3 +229,121 @@
     margin: 0px 0px 50px 0px;
 }
 
+
+
+@media (max-width: 480px) {
+    
+
+    .fa-bars, label {
+        display: block;
+    }
+
+    .header-info {
+        padding: 0;
+    }
+
+    .header-topBar,
+    .image-logo,
+    .header-info-address,
+    .header-info-time,
+    .header-button {
+        display: none;
+    }
+
+
+    .header-nav-controls {
+        padding: 15px 0px;
+        width: 30%;
+    }
+
+    .header-nav-menu a, 
+    .header-nav-socialIcons  {
+        display: none;       
+    }
+    
+    .fa-bars {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .header-nav-controls .fa-shopping-bag,
+    .header-nav-controls .fa-search {
+        color: $secondary;
+        justify-content: space-around;
+        width: 15%;
+        p {
+            border-radius: 50%;
+            background-color:  #2d71cd;
+            text-align: center;
+            padding: 2.5px 0px;
+            width: 15px;
+            height: 15px;
+            font-size: 10px;
+            position: absolute;
+            left: 18px;
+        }
+    }
+
+    .header-nav {
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        z-index: 99999;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+    
+    .header-nav .collapsible-menu  {
+        display: block;
+        
+        .menu-content-mobile a {
+            color: $primary;
+            display: none;
+        }
+    
+        .menu-content-mobile {
+            position:fixed;
+            width: 100%;
+            height: 0;
+            background-color: white;
+            text-align: center;
+            left: 0;
+            opacity: 0;
+            transition: 0.5s ease;
+            padding: 20px 0px;
+            line-height: 30px;
+            .header-nav-socialIcons-mobile {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 100px;
+                a {
+                    font-size: 15px;
+                    padding: 20px 5px;
+                    border-top: 1px solid $primary;
+                }
+
+            }
+        }
+    
+        #burger-menu {
+            opacity: 0;
+        }
+        
+        input:checked ~ .menu-content-mobile {
+            height: calc(100vh - 50px);
+            bottom: 0;
+            opacity: 1;
+            
+        }
+    
+        input:checked ~ .menu-content-mobile a {
+            display: block;
+        }
+    }
+}
+
+
+	

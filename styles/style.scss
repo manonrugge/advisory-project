@@ -16,6 +16,10 @@ body {
     background: $secondary;
 }
 
+// * {
+//     border: 0.5px solid pink;
+// }
+
 .wrapper {
     width: 60%;
     margin: 0 auto;
@@ -23,7 +27,7 @@ body {
 
 @media (max-width: 940px) {
     .wrapper {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
 }

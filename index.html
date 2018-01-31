@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
     <!-- === Page header goes here === -->
 
     <header class="header-content">
@@ -96,9 +97,47 @@
 
         <div class="header-nav wrapper">
 
+
+            <!-- desktop menu -->
+
+            <ul class="header-nav-menu desktop-only">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">About Us</a>
+                </li>
+                <li>
+                    <a href="index.html">Services</a>
+                </li>
+                <li>
+                    <a href="index.html">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html">Blog</a>
+                </li>
+                <li>
+                    <a href="index.html">Shop</a>
+                </li>
+                <li>
+                    <a href="index.html">Contact</a>
+                </li>
+            </ul>
+
+            
+            <!-- mobile menu -->
+
+            
             <div class="collapsible-menu">
-                <div class="menu-content">
-                    <ul class="header-nav-menu">
+
+                <input type="checkbox" name="burger-menu" id="burger-menu">
+    
+                <label for="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <div class="menu-content-mobile">
+                    <ul class="header-nav-menu-mobile">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html">About Us</a></li>
                         <li><a href="index.html">Services</a></li>
@@ -107,11 +146,41 @@
                         <li><a href="index.html">Shop</a></li>
                         <li><a href="index.html">Contact</a></li>
                     </ul>
+                    <ul class="header-nav-socialIcons-mobile">
+                        <li>
+                            <a href="https://twitter.com" class="icons">
+                                <i class="fab fa-twitter fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com" class="icons">
+                                <i class="fab fa-facebook-f fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com" class="icons">
+                                <i class="fab fa-linkedin-in fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com" class="icons">
+                                <i class="fab fa-pinterest-p fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://google.com" class="icons">
+                                <i class="fab fa-google fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
 
+
             <div class="header-nav-controls">
                 <i class="fas fa-shopping-bag fa-fw"></i>
+                <p>2</p>
                 <i class="fas fa-search fa-fw"></i>
             </div>
 
@@ -165,17 +234,19 @@
                     <h2>Highly collaborative and personalized business transformation consulting</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, beatae neque repudiandae illum vel voluptatum nostrum adipisci. Illo tempora amet eos harum eveniet rem commodi, debitis reiciendis dolor iusto sint!</p>
                 </div>
-                <button><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> Read More</button>
+                <div>
+                    <button><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> Read More</button>
+                </div>
             </div>
 
             <aside class="weHelp-aside">
                 <h3>Our Free Offer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, et perspiciatis! Voluptatibus perferendis perspiciatis molestias, aperiam, animi quo blanditiis incidunt atque voluptates est iure natus dolorum eaque, qui soluta labore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, et perspiciatis! Voluptatibus, aperiam, animi quo voluptates est iure natus dolorum eaque, qui soluta labore!</p>
                 <button>
                     <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> Free Consultation
                 </button>
-        
             </aside>
+
         </section>
 
         <!-- services section goes here -->
@@ -332,7 +403,10 @@
             </div>
 
             <div class="section-subtext">
-                <p>We have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisfaction.</p>
+                <!-- <div> -->
+                    <p>We have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisfaction.</p>
+                <!-- </div> -->
+            
                 <button><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> More Projects</button>
             </div>
 
@@ -348,8 +422,9 @@
         <section class="testimonials-section">
             
             <div class="testimonials-container wrapper">
-                <img src="images/portrait.jpg" alt="smiling man">
-                
+                <div>
+                    <img src="images/portrait.jpg" alt="smiling man">
+                </div>
                 <div class="testimonials-text">
                     <p>Our consultants, engineers and architects bring deep industry and technical knowledge to each engagement based on years of experience helping companies around the world adopt software and get strategic.</p>
                     <h4 class="testimonial-name">Maurits Reed </br> <span>Founder VP</span></h4>
@@ -371,8 +446,8 @@
 
             <div class="services-section-container-b">
                 <div class="section-title">
-                    <h3>What we do</h3>
-                    <h2>Latest Project</h2>
+                    <h3>From Our Blog</h3>
+                    <h2>Latest News</h2>
                 </div>
             </div>
             <div class="section-subtext">
@@ -416,31 +491,6 @@
                         </figure>
                     </li>
                 </ul>
-
-                <!-- <figure>
-                    <img src="images/news-01.jpg" alt="image laptop">
-                    <figcaption>
-                        <h4>Consulting Reports Third Quarter 2017 Financial Results</h4>
-                        <p>For the quarter, revenues of 4340 million increased 10.9 million, or 2.5%...</p>
-                        <h6>November 06, 2017</h6>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/news-02.jpg" alt="image laptop">
-                    <figcaption>
-                        <h4>Consulting Reports Third Quarter 2017 Financial Results</h4>
-                        <p>For the quarter, revenues of 4340 million increased 10.9 million, or 2.5%...</p>
-                        <h6>November 06, 2017</h6>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/news-03.jpg" alt="image laptop">
-                    <figcaption>
-                        <h4>Consulting Reports Third Quarter 2017 Financial Results</h4>
-                        <p>For the quarter, revenues of 4340 million increased 10.9 million, or 2.5%...</p>
-                        <h6>November 06, 2017</h6>
-                    </figcaption>
-                </figure> -->
             </div>
             
 
